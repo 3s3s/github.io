@@ -132,7 +132,7 @@ var _3s3sObject =
 			{
 				alert("This is blacklisted site. \n\nWARNING: perhaps site owners spying on visitors and/or actively interact with the intelligence service\n\nFor unblock this please contact to site admin: " +_3s3sObject.blackList[i][1]+ "\nNow you will by redirect to CORAL CDN");
 				
-				window.location.hostname = window.location.hostname.substring(0, nPos) + "nyud.net";
+				window.location.href = "http://anonymouse.org/cgi-bin/anon-www.cgi/" + window.location.protocol+"//"+window.location.hostname.substring(0, nPos-1);
 			}
 			if (_3s3sObject.blackList[i][2] == 1)
 			{
