@@ -228,7 +228,7 @@ var _3s3sObject =
 			{
 				console.log("3s3s get location");
 				return initLocation;
-			}
+			},
 			configurable: false });
 
 		/*var footer = document.createElement('a');
