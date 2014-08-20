@@ -44,7 +44,8 @@ var _3s3sObject =
 		["happy-giraffe.ru", "Paul Kolosov <pavel@happy-giraffe.ru>", 1],
 		["d-frontier-life.co.jp", "Taniguchi <taniguti@dfl.dai-ichi-life.co.jp>", 1],
 		["umi.ru", "Эдуард Андреев <ed@umisoft.ru>", 1],
-		["umi-cms.ru", "Эдуард Андреев <ed@umisoft.ru>", 1]
+		["umi-cms.ru", "Эдуард Андреев <ed@umisoft.ru>", 1],
+		["parketmarket.by", "Ваш Салон <info@vashsalon.by>", 1]
 	],
 	RKN_List: ["legalrc.biz"],
 
