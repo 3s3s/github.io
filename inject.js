@@ -199,6 +199,7 @@ var _3s3sObject =
 		
 			
 		var initDomain = document.domain.substring(0);
+		var initLocation = window.location;
 				
 		Object.defineProperty(document, "domain", {
 			get: function()
@@ -221,6 +222,15 @@ var _3s3sObject =
 				return newValue+"." + _3s3sObject.workProxy;
 			}, 
 			configurable: false });
+			
+		Object.defineProperty(window, "location", {
+			get: function()
+			{
+				console.log("3s3s get location");
+				return initLocation;
+			}
+			configurable: false });
+
 		/*var footer = document.createElement('a');
 		footer.id = "3s3s_footer";
 		footer.href = "http://www.3s3s.org";
