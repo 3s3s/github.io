@@ -223,13 +223,13 @@ var _3s3sObject =
 			}, 
 			configurable: false });
 			
-		Object.defineProperty(window, "location", {
+		/*Object.defineProperty(window, "location", {
 			get: function()
 			{
 				console.log("3s3s get location");
 				return initLocation;
 			},
-			configurable: false });
+			configurable: false });*/
 
 		/*var footer = document.createElement('a');
 		footer.id = "3s3s_footer";
