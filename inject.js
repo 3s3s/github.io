@@ -42,7 +42,6 @@ var _3s3sObject =
 		["www.kddi.com", "T. Mukasa <csirt-support@kddi.com>", 1],
 		["kddi.com", "T. Mukasa <csirt-support@kddi.com>", 1],
 		["happy-giraffe.ru", "Paul Kolosov <pavel@happy-giraffe.ru>", 1],
-		["d-frontier-life.co.jp", "Taniguchi <taniguti@dfl.dai-ichi-life.co.jp>", 1],
 		["umi.ru", "Эдуард Андреев <ed@umisoft.ru>", 1],
 		["umi-cms.ru", "Эдуард Андреев <ed@umisoft.ru>", 1],
 		["parketmarket.by", "Ваш Салон <info@vashsalon.by>", 3]
