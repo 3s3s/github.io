@@ -46,7 +46,7 @@ var _3s3sObject =
 		["umi-cms.ru", "Эдуард Андреев <ed@umisoft.ru>", 1],
 		["parketmarket.by", "Ваш Салон <info@vashsalon.by>", 3]
 	],
-	RKN_List: ["legalrc.biz"],
+	RKN_List: ["legalrc.biz", "kavkazcenter.com"],
 
 	workProxy: "",
 	loadScript: function(url, callback)
