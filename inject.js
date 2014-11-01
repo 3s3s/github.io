@@ -6,6 +6,7 @@ var _3s3sObject =
 		["yagoda-goji.com", "Aleksandr Litvinov <support@yagoda-goji.com>", 0], 
 		["security.ua", "Igor Prikhodko <admin@corp.security.ua>", 0],
 		["ebank.co.jp", "Toshiharu Kaneko <toshiharu.kaneko@mail.rakuten.com>", 1],
+		["ebay.co.uk", "Gerhard W. Recher", "abuse@clean-mx.de"],
 		["infoseek.co.jp", "Toshiharu Kaneko <toshiharu.kaneko@mail.rakuten.com>", 1],
 		["infoseek.jp", "Toshiharu Kaneko <toshiharu.kaneko@mail.rakuten.com>", 1],
 		["internet-research.jp", "Toshiharu Kaneko <toshiharu.kaneko@mail.rakuten.com>", 1],
