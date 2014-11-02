@@ -129,27 +129,31 @@ var _3s3sObject =
 			if (nPos == -1)
 				continue;
 				
+			var protocol = window.location.protocol
 			var host = window.location.hostname.substring(0, nPos-1);
 			if (host.indexOf("h_t_t_p_s.") == 0)
+			{
+				protocol = "https";
 				host = window.location.hostname.substring(10, nPos-1)
+			}
 			
 			if (_3s3sObject.blackList[i][2] == 0)
 			{
 				alert("This is blacklisted site. \n\nWARNING: perhaps site owners spying on visitors and/or actively interact with the intelligence service\n\nFor unblock this please contact to site admin: " +_3s3sObject.blackList[i][1]+ "\nNow you will by redirect to anonymouse.org");
 				
-				window.location.href = "http://anonymouse.org/cgi-bin/anon-www.cgi/" + window.location.protocol+"//"+host;
+				window.location.href = "http://anonymouse.org/cgi-bin/anon-www.cgi/" + protocol+"//"+host;
 			}
 			if (_3s3sObject.blackList[i][2] == 1)
 			{
 				alert("This is blacklisted site. \n\nFor unblock this please contact to site admin: " +_3s3sObject.blackList[i][1]+ "\nNow you will by redirect to anonymouse.org");
 				
-				window.location.href = "http://anonymouse.org/cgi-bin/anon-www.cgi/" + window.location.protocol+"//"+host;
+				window.location.href = "http://anonymouse.org/cgi-bin/anon-www.cgi/" + protocol+"//"+host;
 			}
 			if (_3s3sObject.blackList[i][2] == 3)
 			{
 				alert("This is blacklisted site. \n\nFor unblock this please contact to site admin: " +_3s3sObject.blackList[i][1]+ "\nNow you will by redirect to CORAL CDN");
 				
-				window.location.hostname = window.location.hostname.substring(0, nPos) + "nyud.net";
+				window.location.hostname = host + ".nyud.net";
 			}
 			
 			break;
