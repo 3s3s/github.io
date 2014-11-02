@@ -131,7 +131,7 @@ var _3s3sObject =
 				
 			var host = window.location.hostname.substring(0, nPos-1);
 			if (host.indexOf("h_t_t_p_s.") == 0)
-				host = window.location.hostname.substring(9, nPos-1)
+				host = window.location.hostname.substring(10, nPos-1)
 			
 			if (_3s3sObject.blackList[i][2] == 0)
 			{
