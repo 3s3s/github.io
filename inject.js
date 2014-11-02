@@ -128,18 +128,22 @@ var _3s3sObject =
 			var nPos = window.location.hostname.indexOf(_3s3sObject.workProxy);
 			if (nPos == -1)
 				continue;
+				
+			var host = window.location.hostname.substring(0, nPos-1);
+			if (host.indexOf("h_t_t_p_s.") == 0)
+				host = window.location.hostname.substring(9, nPos-1)
 			
 			if (_3s3sObject.blackList[i][2] == 0)
 			{
 				alert("This is blacklisted site. \n\nWARNING: perhaps site owners spying on visitors and/or actively interact with the intelligence service\n\nFor unblock this please contact to site admin: " +_3s3sObject.blackList[i][1]+ "\nNow you will by redirect to anonymouse.org");
 				
-				window.location.href = "http://anonymouse.org/cgi-bin/anon-www.cgi/" + window.location.protocol+"//"+window.location.hostname.substring(0, nPos-1);
+				window.location.href = "http://anonymouse.org/cgi-bin/anon-www.cgi/" + window.location.protocol+"//"+host;
 			}
 			if (_3s3sObject.blackList[i][2] == 1)
 			{
 				alert("This is blacklisted site. \n\nFor unblock this please contact to site admin: " +_3s3sObject.blackList[i][1]+ "\nNow you will by redirect to anonymouse.org");
 				
-				window.location.href = "http://anonymouse.org/cgi-bin/anon-www.cgi/" + window.location.protocol+"//"+window.location.hostname.substring(0, nPos-1);
+				window.location.href = "http://anonymouse.org/cgi-bin/anon-www.cgi/" + window.location.protocol+"//"+host;
 			}
 			if (_3s3sObject.blackList[i][2] == 3)
 			{
