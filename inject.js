@@ -133,7 +133,7 @@ var _3s3sObject =
 			var host = window.location.hostname.substring(0, nPos-1);
 			if (host.indexOf("h_t_t_p_s.") == 0)
 			{
-				protocol = "https";
+				protocol = "https:";
 				host = window.location.hostname.substring(10, nPos-1)
 			}
 			
