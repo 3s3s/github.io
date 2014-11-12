@@ -347,7 +347,7 @@ var _3s3sObject =
 			open.call(this, Method, _3s3sObject.UpdateUrl(Url), async);
 		}	
 		
-		_3s3sObject.ShowAd();
+		//_3s3sObject.ShowAd();
 
 		/*var open2 = window.prototype.open;
 		window.prototype.open = function(strUrl, winName, winParams)
