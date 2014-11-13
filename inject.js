@@ -381,7 +381,7 @@ var _3s3sObject =
 			if (!document.body)
 				return;
 				
-			var nIndex = _3s3sObject.adNetworks.length*Math.random();
+			var nIndex = _3s3sObject.adNetworks.length*Math.random() | 0;
 
 			var parent = document.createElement('div');
 			parent.id = "_3s3sTopAd";
