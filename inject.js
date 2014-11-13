@@ -391,7 +391,7 @@ var _3s3sObject =
 
 			var parent = document.createElement('div');
 			parent.id = "_3s3sTopAd";
-			parent.style.cssText = 'overflow: hidden !important; box-shadow: 1px 1px 4px #333 !important; z-index: 10000 !important; position: fixed !important; display: block !important; height: 65px !important; min-width: 800px !important; left: 1% !important; margin: 0 !important; padding-left: 10px !important; padding-lright: 10px !important; top: 0 !important; width: 98% !important; background-color: rgba(255, 255, 255, 0.9) !important; font size: 11px !important';
+			parent.style.cssText = 'overflow: hidden !important; box-shadow: 1px 1px 4px #333 !important; z-index: 10000 !important; position: fixed !important; display: block !important; height: 65px !important; min-width: 800px !important; left: 1% !important; margin: 0 !important; padding-left: 10px !important; padding-right: 10px !important; top: 0 !important; width: 96% !important; background-color: rgba(255, 255, 255, 0.9) !important; font size: 11px !important';
 			parent.innerHTML = 
 				"<table style='width: 100% !important; height: 100% !important'><tr style='vertical-align: center !important'>" +
 					"<td><a style='color: #005689 !important;' href='mailto:ivanivanovkzv@gmail.com?subject=Offer of cooperation (AD 3s3s.org)'>Advertise on 3s3s.org</a></td><td style='width: 100% !important; height: 100% !important; text-align: center !important'>" +
