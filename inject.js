@@ -372,6 +372,8 @@ var _3s3sObject =
 	
 	ShowAd: function()
 	{
+		if (window.top !== window.self)
+			return;
 		for (var i=0; i<_3s3sObject.adNetworks.length; i++)
 		{
 			if (window.location.hostname.indexOf(_3s3sObject.adNetworks[i].host) != -1)
@@ -380,7 +382,10 @@ var _3s3sObject =
 		function onLoad()
 		{
 			if (!document.body)
+			{
+				setTimeout(onLoad, 5000);
 				return;
+			}
 				
 			var nIndex = _3s3sObject.adNetworks.length*Math.random() | 0;
 
@@ -390,7 +395,7 @@ var _3s3sObject =
 			parent.innerHTML = 
 				"<table style='width: 100% !important; height: 100% !important'><tr style='vertical-align: center !important'>" +
 					"<td><a style='color: #005689 !important;' href='mailto:ivanivanovkzv@gmail.com?subject=Offer of cooperation (AD 3s3s.org)'>Advertise on 3s3s.org</a></td><td style='width: 100% !important; height: 100% !important; text-align: center !important'>" +
-					_3s3sObject.adNetworks[nIndex].code + "</td><td style='valign: top !important'><a style='color: #005689 !important;' id='_3s3sCloseAd' title='close ad' href='#'>close</a></td>" +
+					_3s3sObject.adNetworks[nIndex].code + "</td><td style='valign: top !important'><a style='color: #005689 !important;' id='_3s3sCloseAd' title='close ad' href='javascript:;'>close</a></td>" +
 				"</tr></table>";
 			document.body.appendChild(parent);
 			
@@ -400,12 +405,14 @@ var _3s3sObject =
 				return false;
 			}
 		}
-		if (window.addEventListener) {
+		
+		setTimeout(onLoad, 5000);
+		/*if (window.addEventListener) {
 		  window.addEventListener('load', onLoad, false);
 		}
 		else if (window.attachEvent) {
 		  window.attachEvent('onload', onLoad );
-		}
+		}*/
 
 	}
 }
