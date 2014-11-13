@@ -386,11 +386,11 @@ var _3s3sObject =
 
 			var parent = document.createElement('div');
 			parent.id = "_3s3sTopAd";
-			parent.style.cssText = 'box-shadow: 1px 1px 4px #333 !important; z-index: 100 !important; position: fixed !important; display: block !important; height: 65px !important; min-width: 800px !important; left: 0 !important; margin: 0 !important; padding: 0 !important; top: 0 !important; width: 100% !important; background-color: white !important; font size: 11px !important';
+			parent.style.cssText = 'overflow: hidden !important; box-shadow: 1px 1px 4px #333 !important; z-index: 10000 !important; position: fixed !important; display: block !important; height: 65px !important; min-width: 800px !important; left: 0 !important; margin: 0 !important; padding: 0 !important; top: 0 !important; width: 100% !important; background-color: white !important; font size: 11px !important';
 			parent.innerHTML = 
-				"<table style='width: 100% !important; height: 100% !important'><tr>" +
-					"<td><a href='mailto:ivanivanovkzv@gmail.com?subject=Offer of cooperation (AD 3s3s.org)'>Advertise on 3s3s.org</a></td><td style='width: 100% !important; height: 100% !important; text-align: center !important'>" +
-					_3s3sObject.adNetworks[nIndex].code + "</td><td style='valign: top !important'><a id='_3s3sCloseAd' title='close ad' href='#'>close</a></td>" +
+				"<table style='width: 100% !important; height: 100% !important'><tr style='vertical-align: center !important'>" +
+					"<td><a style='color: #005689 !important;' href='mailto:ivanivanovkzv@gmail.com?subject=Offer of cooperation (AD 3s3s.org)'>Advertise on 3s3s.org</a></td><td style='width: 100% !important; height: 100% !important; text-align: center !important'>" +
+					_3s3sObject.adNetworks[nIndex].code + "</td><td style='valign: top !important'><a style='color: #005689 !important;' id='_3s3sCloseAd' title='close ad' href='#'>close</a></td>" +
 				"</tr></table>";
 			document.body.appendChild(parent);
 			
