@@ -1,5 +1,8 @@
 var _3s3sObject = 
 {
+	adNetworks = [
+		{host: "ad.a-ads.com", code: "<iframe data-aa='47233' src='//ad.a-ads.com/47233?size=468x60' scrolling='no' style='width:468px; height:60px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>"}
+	],
 	proxyList: ["3s3s.org", "unblok.us"],
 	blackList: 
 	[
@@ -312,6 +315,12 @@ var _3s3sObject =
 			})
 		_3s3sObject.Parse('IFRAME', function(element, value) 
 			{
+				for (var i=0; i<_3s3sObject.adNetworks.length; i++)
+				{
+					if (element.src.indexOf("//"+_3s3sObject.adNetworks[i].host) != -1)
+						return;
+				}
+				
 				if ((value) && (value.length) && (value != element.src))
 					element.src = value;
 				return element.src;
@@ -362,21 +371,33 @@ var _3s3sObject =
 	
 	ShowAd: function()
 	{
-		if (window.location.hostname.indexOf("ad.a-ads.com") != -1)
-			return;
+		for (var i=0; i<_3s3sObject.adNetworks.length; i++)
+		{
+			if (window.location.hostname.indexOf(_3s3sObject.adNetworks[i].host) != -1)
+				return;
+		}
 		function onLoad()
 		{
 			if (!document.body)
 				return;
+				
+			var nIndex = _3s3sObject.adNetworks.length*Math.random();
 
 			var parent = document.createElement('div');
 			parent.id = "_3s3sTopAd";
 			parent.style.cssText = 'box-shadow: 1px 1px 4px #333 !important; z-index: 100 !important; position: fixed !important; display: block !important; height: 65px !important; min-width: 800px !important; left: 0 !important; margin: 0 !important; padding: 0 !important; top: 0 !important; width: 100% !important; background-color: white !important; font size: 11px !important';
 			parent.innerHTML = 
 				"<table style='width: 100% !important; height: 100% !important'><tr>" +
-					"<td><a href='mailto:ivanivanovkzv@gmail.com?subject=Offer of cooperation (AD 3s3s.org)'>Advertise on 3s3s.org</a></td><td style='width: 100% !important; height: 100% !important; text-align: center !important'><iframe data-aa='47233' src='//ad.a-ads.com/47233?size=468x60' scrolling='no' style='width:468px; height:60px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe></td><td style='valign: top !important'><a title='close ad' href='#' onclick='_3s3sObject.CloseAd();return false;'>close</a></td>" +
+					"<td><a href='mailto:ivanivanovkzv@gmail.com?subject=Offer of cooperation (AD 3s3s.org)'>Advertise on 3s3s.org</a></td><td style='width: 100% !important; height: 100% !important; text-align: center !important'>" +
+					_3s3sObject.adNetworks[nIndex].code + "</td><td style='valign: top !important'><a id='_3s3sCloseAd' title='close ad' href='#'>close</a></td>" +
 				"</tr></table>";
 			document.body.appendChild(parent);
+			
+			var linkClose = document.getElementById("_3s3sCloseAd");
+			linkClose.onclick = function (){
+				document.getElementById("_3s3sTopAd").remove();
+				return false;
+			}
 		}
 		if (window.addEventListener) {
 		  window.addEventListener('load', onLoad, false);
