@@ -367,7 +367,8 @@ var _3s3sObject =
 	},
 	CloseAd: function()
 	{
-		document.getElementById("_3s3sTopAd").remove();
+		var elem = document.getElementById("_3s3sTopAd")
+		elem.parentNode.removeChild(elem);
 		return false;
 	},
 	
@@ -408,7 +409,7 @@ var _3s3sObject =
 				return false;
 			}*/ 
 			linkClose.addEventListener('click', _3s3sObject.CloseAd, false);
-			linkClose.addEventListener('touchstart', function(e){document.getElementById("_3s3sTopAd").remove();e.preventDefault();}, false);
+			linkClose.addEventListener('touchstart', _3s3sObject.CloseAd, false);
 		}
 		
 		setTimeout(onLoad, 5000);
