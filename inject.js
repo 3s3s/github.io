@@ -367,7 +367,7 @@ var _3s3sObject =
 	},
 	CloseAd: function()
 	{
-		document.getElementById("_3s3sTopAd").remove();
+		document.getElementById("_3s3sTopAd").style.display = 'none';
 	},
 	
 	ShowAd: function()
