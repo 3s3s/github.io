@@ -368,6 +368,7 @@ var _3s3sObject =
 	CloseAd: function()
 	{
 		document.getElementById("_3s3sTopAd").style.display = 'none';
+		return false;
 	},
 	
 	ShowAd: function()
@@ -407,7 +408,7 @@ var _3s3sObject =
 				return false;
 			}*/ 
 			linkClose.addEventListener('click', _3s3sObject.CloseAd, false);
-			linkClose.addEventListener('touchstart', _3s3sObject.CloseAd, false);
+			linkClose.addEventListener('touchstart', function(e){alert(e.changedTouches[0].pageX);}, false);
 		}
 		
 		setTimeout(onLoad, 5000);
