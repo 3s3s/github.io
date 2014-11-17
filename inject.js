@@ -399,11 +399,13 @@ var _3s3sObject =
 				"</tr></table>";
 			document.body.appendChild(parent);
 			
-			var linkClose = document.getElementById("_3s3sCloseAd");
+			/*var linkClose = document.getElementById("_3s3sCloseAd");
 			linkClose.onclick = function (){
 				document.getElementById("_3s3sTopAd").remove();
 				return false;
-			}
+			}*/ 
+			linkClose.addEventListener('onclick', _3s3sObject.CloseAd, false);
+			linkClose.addEventListener('touchstart', _3s3sObject.CloseAd, false);
 		}
 		
 		setTimeout(onLoad, 5000);
