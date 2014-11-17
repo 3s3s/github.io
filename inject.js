@@ -404,7 +404,7 @@ var _3s3sObject =
 				document.getElementById("_3s3sTopAd").remove();
 				return false;
 			}*/ 
-			linkClose.addEventListener('onclick', _3s3sObject.CloseAd, false);
+			linkClose.addEventListener('click', _3s3sObject.CloseAd, false);
 			linkClose.addEventListener('touchstart', _3s3sObject.CloseAd, false);
 		}
 		
