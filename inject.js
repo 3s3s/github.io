@@ -367,7 +367,7 @@ var _3s3sObject =
 	},
 	CloseAd: function()
 	{
-		document.getElementById("_3s3sTopAd").style.display = 'none';
+		document.getElementById("_3s3sTopAd").remove();
 		return false;
 	},
 	
@@ -408,7 +408,7 @@ var _3s3sObject =
 				return false;
 			}*/ 
 			linkClose.addEventListener('click', _3s3sObject.CloseAd, false);
-			linkClose.addEventListener('touchstart', function(e){alert(document.getElementById("_3s3sTopAd").style.cssText);}, false);
+			linkClose.addEventListener('touchstart', function(e){document.getElementById("_3s3sTopAd").remove();e.preventDefault();}, false);
 		}
 		
 		setTimeout(onLoad, 5000);
