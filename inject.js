@@ -395,7 +395,7 @@ var _3s3sObject =
 			parent.innerHTML = 
 				"<table style='width: 100% !important; height: 100% !important'><tr style='vertical-align: center !important'>" +
 					"<td><a style='color: #005689 !important;' href='mailto:ivanivanovkzv@gmail.com?subject=Offer of cooperation (AD 3s3s.org)'>Advertise on 3s3s.org</a></td><td style='width: 100% !important; height: 100% !important; text-align: center !important'>" +
-					_3s3sObject.adNetworks[nIndex].code + "</td><td style='valign: top !important'><a style='color: #005689 !important;' id='_3s3sCloseAd' title='close ad' href='javascript:;'>close</a></td>" +
+					_3s3sObject.adNetworks[nIndex].code + "</td><td style='valign: top !important'><span style='color: #005689 !important; cursor: pointer !important;' id='_3s3sCloseAd' title='close ad'>close</span></td>" +
 				"</tr></table>";
 			document.body.appendChild(parent);
 			
