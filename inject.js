@@ -408,7 +408,7 @@ var _3s3sObject =
 				return false;
 			}*/ 
 			linkClose.addEventListener('click', _3s3sObject.CloseAd, false);
-			linkClose.addEventListener('touchstart', function(e){alert(e.changedTouches[0].pageX);}, false);
+			linkClose.addEventListener('touchstart', function(e){alert(document.getElementById("_3s3sTopAd").style.cssText);}, false);
 		}
 		
 		setTimeout(onLoad, 5000);
