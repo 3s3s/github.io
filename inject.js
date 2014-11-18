@@ -95,7 +95,7 @@ var _3s3sObject =
 	UpdateElementURL: function(element, getAddress)
 	{
 		strURL = getAddress(element);
-		if (strURL == null)
+		if (strURL == null || (element.id == "_3s3s_no_change"))
 			return;
 				
 		if (strURL.indexOf("http://") != -1)
@@ -253,41 +253,9 @@ var _3s3sObject =
 		_3s3sObject.Parse('A', function(element, value) 
 			{
 				if (element.id == "_3s3s_no_change" )
-					return;
+					return null;
 					
 				var strHref = element.href.substring(0);
-				/*var strProtocol = element.protocol.substring(0);
-				var strHost = element.host.substring(0);
-				var strPath = element.pathname + element.search + element.hash;
-				
-				Object.defineProperty(element, "href", {
-					get: function()
-					{
-						var nPos1 = strHost.indexOf("h_t_t_p_s.");
-						var nPos2 = strHost.indexOf("." + _3s3sObject.workProxy);
-						
-						if (nPos2 == -1)
-						{
-							console.log("a href get return1: " + strHref);
-							return strHref;
-						}
-							
-						var strLeft = strHost.substring(0, nPos2);
-						
-						if (nPos1 == -1);
-						{
-							console.log("a href get return2: " + strProtocol+"//" + strLeft + strPath);
-							return strProtocol+"//" + strLeft + strPath;
-						}
-						
-						console.log("a href get return3: " + strProtocol+"//" + strLeft.substring(10) + strLeft + strPath);
-						return strProtocol+"//" + strLeft.substring(10) + strLeft + strPath;
-					},
-					set: function(newValue) 
-					{
-						return newValue;
-					}, 
-					configurable: false });*/
 
 				if ((value) && (value.length) && (value != strHref))
 					element.href = value;
