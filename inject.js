@@ -252,6 +252,9 @@ var _3s3sObject =
 		
 		_3s3sObject.Parse('A', function(element, value) 
 			{
+				if (element.id == "_3s3s_no_change" )
+					return;
+					
 				var strHref = element.href.substring(0);
 				/*var strProtocol = element.protocol.substring(0);
 				var strHost = element.host.substring(0);
