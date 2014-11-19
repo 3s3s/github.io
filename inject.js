@@ -3,6 +3,7 @@ var _3s3sObject =
 	adNetworks: [
 		{host: "ad.a-ads.com", code: "<iframe data-aa='47233' src='//ad.a-ads.com/47233?size=468x60' scrolling='no' style='width:468px; height:60px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>"},
 		{host: "www.booking.com", code: "<iframe width='468' height='60' scrolling='no' frameborder='0' name='banner' target='_blank' src='https://www.booking.com?aid=801965;tmpl=banners;size=468x60;lang=en;target_aid=801965;theme=minimal;label=banner'></iframe>"},
+		{host: "rcm-na.amazon-adsystem.com", code: "<iframe src='http://rcm-na.amazon-adsystem.com/e/cm?t=3sstsasu-20&o=1&p=26&l=ur1&category=smallparts&banner=1NZZMCC29R8Q371Z2T82&m=smallparts&f=ifr&linkID=UPGJQEES2DH6EHRV' width='468' height='60' scrolling='no' border='0' marginwidth='0' style='border:none;' frameborder='0'></iframe>"},
 		{host: "ad.3s3s.org", code: "<iframe src='http://ad.3s3s.org' scrolling='no' style='width:468px; height:60px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>"}
 		//{host: "coinurl.com", code: "<iframe scrolling='no' style='border: 0; width: 468px; height: 60px;' src='//coinurl.com/get.php?id=30738'></iframe>"}
 	],
