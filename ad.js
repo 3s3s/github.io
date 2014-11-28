@@ -71,7 +71,7 @@ var _3s3sObjectAD =
 		var nIndex = adArray.length*Math.random() | 0;
 		adArray[nIndex].style.display = 'block';
 		
-		placeFirst.style.display = 'block';
+		placeFirst.parentNode.style.display = 'block';
   }
 }
 
