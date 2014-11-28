@@ -204,6 +204,9 @@ var _3s3sObject =
 	},
 	run: function()
 	{
+		if (window.location.hostname.indexOf("ads2.3s3s.org") != -1)
+			return;
+			
 		for (var i=0; i<_3s3sObject.proxyList.length; i++)
 		{
 			if (window.location.hostname.indexOf(_3s3sObject.proxyList[i]) == -1)
@@ -354,9 +357,7 @@ var _3s3sObject =
 	{
 		if (window.top !== window.self)
 			return;
-		if (window.location.hostname.indexOf("ads2.3s3s.org") != -1)
-			return;
-			
+
 		for (var i=0; i<_3s3sObject.adNetworks.length; i++)
 		{
 			if (window.location.hostname.indexOf(_3s3sObject.adNetworks[i].host) != -1)
