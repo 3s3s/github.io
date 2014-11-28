@@ -47,13 +47,20 @@ var _3s3sObjectAD =
 	{
 		var ndList = document.body.childNodes;
 		var adArray = [];
-		for (var i = 0; i < ndList.length; i++) {
-			if (!ndList[i].className)
-				continue;
+		for (var i = 0; i < ndList.length; i++)
+		{
+			if (!ndList[i].className) continue;
 			if (ndList[i].className == "ad_root")
 			{
-				ndList[i].style.display = 'none';
-				adArray.push(ndList[i]);
+				var adList = ndList[i].childNodes;
+				for (var j=0; j<adList.length; j++)
+				{
+					if (!adList[j].className) continue;
+					if (adList[j].className != "row") continue;
+					
+					adList[j].style.display = 'none';
+					adArray.push(adList[j]);
+				}
 			}
 		}
 		
