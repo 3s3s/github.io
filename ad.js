@@ -64,6 +64,11 @@ var _3s3sObjectAD =
 			}
 		}
 		
+		if (adArray.length == 0)
+		{
+			console.log("onLoad: ad slots not found!");
+			return;
+		}
 		var nIndex = adArray.length*Math.random() | 0;
 		adArray[nIndex].style.display = 'block';
   }
