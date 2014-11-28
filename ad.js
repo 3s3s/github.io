@@ -45,7 +45,13 @@ var _3s3sObjectAD =
 	
 	onLoad: function()
 	{
-		var ndList = document.body.getElementsByClassName("aa_container size468x60");
+		var places = document.body.getElementsByClassName("aa_container size468x60");
+		if ((!places) || (!places.length))
+			return;
+		
+		var placeFirst = places[0];
+		
+		var ndList = placeFirst.childNodes;
 		var adArray = [];
 		for (var i = 0; i < ndList.length; i++)
 		{
