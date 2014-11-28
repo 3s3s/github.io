@@ -45,22 +45,15 @@ var _3s3sObjectAD =
 	
 	onLoad: function()
 	{
-		var ndList = document.body.childNodes;
+		var ndList = document.body.getElementsByClassName("aa_container size468x60");
 		var adArray = [];
 		for (var i = 0; i < ndList.length; i++)
 		{
 			if (!ndList[i].className) continue;
-			if (ndList[i].className == "ad_root")
+			if (ndList[i].className == "row")
 			{
-				var adList = ndList[i].childNodes;
-				for (var j=0; j<adList.length; j++)
-				{
-					if (!adList[j].className) continue;
-					if (adList[j].className != "row") continue;
-					
-					adList[j].style.display = 'none';
-					adArray.push(adList[j]);
-				}
+				ndList[i].style.display = 'none';
+				adArray.push(ndList[i]);
 			}
 		}
 		
