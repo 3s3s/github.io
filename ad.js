@@ -51,7 +51,10 @@ var _3s3sObjectAD =
 			if (!ndList[i].className)
 				continue;
 			if (ndList[i].className == "ad_root")
+			{
+				ndList[i].style.display = 'none';
 				adArray.push(ndList[i]);
+			}
 		}
 		
 		var nIndex = adArray.length*Math.random() | 0;
