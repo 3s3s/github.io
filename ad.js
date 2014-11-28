@@ -64,6 +64,9 @@ var _3s3sObjectAD =
 		}
 		var nIndex = adArray.length*Math.random() | 0;
 		adArray[nIndex].style.display = 'block';
+		
+		adArray[nIndex].parentNode.style.display = 'block';
+		adArray[nIndex].parentNode.parentNode.style.display = 'block';
   }
 }
 
