@@ -385,7 +385,7 @@ var _3s3sObject =
 					"<td style='valign: top !important; vertical-align: top !important;'><span style='color: #005689 !important; cursor: pointer !important;' id='_3s3sCloseAd' title='close ad'>close</span></td>" +
 					"<td style='width: 100% !important; height: 100% !important; text-align: center !important; vertical-align: top !important;'>" +
 					strCode + "</td>"+
-					"<td><a style='vertical-align: top !important; color: #005689 !important;' href='mailto:ivanivanovkzv@gmail.com?subject=Offer of cooperation (AD 3s3s.org)'>Advertise on 3s3s.org</a></td>"+
+					"<td style='vertical-align: top !important;'><a style='color: #005689 !important;' href='mailto:ivanivanovkzv@gmail.com?subject=Offer of cooperation (AD 3s3s.org)'>Advertise on 3s3s.org</a></td>"+
 				"</tr></table>";
 			document.body.appendChild(parent);
 			
