@@ -60,7 +60,8 @@ var _3s3sObjectAD =
 		
 		var nIndex = adArray.length*Math.random() | 0;
 		
-		if (top.location.hostname.indexOf("grani.ru.3s3s.org") != -1)
+		var strTopHost = top.location.hostname + "";
+		if (strTopHost.indexOf("grani.ru.3s3s.org") != -1)
 		{
 			nIndex = 0;
 			placeFirst.getElementsByClassName("aa_panel")[0].style.display = 'none';
