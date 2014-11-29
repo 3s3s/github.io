@@ -381,7 +381,7 @@ var _3s3sObject =
 			parent.id = "_3s3sTopAd";
 			parent.style.cssText = 'overflow: hidden !important; box-shadow: 1px 1px 4px #333 !important; z-index: 2047483647 !important; position: fixed !important; display: block !important; height: 65px !important; min-width: 800px !important; left: 1% !important; margin: 0 !important; padding-left: 10px !important; padding-right: 10px !important; top: 0 !important; width: 96% !important; background-color: rgba(255, 255, 255, 0.9) !important; font size: 11px !important';
 			parent.innerHTML = 
-				"<table style='width: 100% !important; height: 100% !important; font-size: 12px !important'><tr style='vertical-align: center !important'>" +
+				"<table style='width: 100% !important; height: 100% !important; font-size: 12px !important'><tr style='vertical-align: center !important; height: 65px !important'>" +
 					"<td style='valign: top !important'><span style='color: #005689 !important; cursor: pointer !important;' id='_3s3sCloseAd' title='close ad'>close</span></td>" +
 					"<td style='width: 100% !important; height: 100% !important; text-align: center !important'>" +
 					strCode + "</td>"+
