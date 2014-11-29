@@ -60,7 +60,7 @@ var _3s3sObjectAD =
 		
 		var nIndex = adArray.length*Math.random() | 0;
 		
-		if (top.location.indexOf("grani.ru.3s3s.org") != -1)
+		/*if (top.location.indexOf("grani.ru.3s3s.org") != -1)
 		{
 			nIndex = 0;
 			placeFirst.getElementsByClassName("aa_panel")[0].style.display = 'none';
@@ -69,7 +69,7 @@ var _3s3sObjectAD =
 		{
 			if (nIndex == 0) 
 				nIndex = 1;
-		}
+		}*/
 
 		adArray[nIndex].style.display = 'block';
 		
