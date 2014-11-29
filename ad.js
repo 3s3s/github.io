@@ -50,29 +50,32 @@ var _3s3sObjectAD =
 			return;
 		
 		var placeFirst = places[0];
-		
-		var ndList = placeFirst.childNodes;
-		var adArray = [];
-		for (var i = 0; i < ndList.length; i++)
-		{
-			if (!ndList[i].className) continue;
-			if (ndList[i].className == "row")
-			{
-				ndList[i].style.display = 'none';
-				adArray.push(ndList[i]);
-			}
-		}
-		
+		var adArray = placeFirst.getElementsByClassName("row");
+
 		if (adArray.length == 0)
 		{
 			console.log("onLoad: ad slots not found!");
 			return;
 		}
+		
 		var nIndex = adArray.length*Math.random() | 0;
+		
+		if (window.location.hostname.indexOf("grani.ru.3s3s.org") != -1)
+		{
+			nIndex = 0;
+			placeFirst.getElementsByClassName("aa_panel")[0].style.display = 'none';
+		}
+		else
+		{
+			if (nIndex == 0) 
+				nIndex = 1;
+		}
+
 		adArray[nIndex].style.display = 'block';
 		
 		placeFirst.parentNode.style.display = 'block';
-  }
+		
+	}
 }
 
 if (window.addEventListener) {
