@@ -101,7 +101,7 @@ var _3s3sObject =
 	UpdateElementURL: function(element, getAddress)
 	{
 		strURL = getAddress(element);
-		if (strURL == null || (element.id == "_3s3s_no_change"))
+		if (strURL == null || (element.id == "_3s3s_no_change") || (element.parentNode.id == "_3s3s_no_change"))
 			return;
 				
 		if (strURL.indexOf("http://") != -1)
@@ -378,7 +378,7 @@ var _3s3sObject =
 			{
 				//strCode = "<iframe target='_blank' frameborder='0' src='http://adsence.3s3s.org' scrolling='no' style='width:480px; height:70px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>";
 				strCode = 
-				'<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
+				'<div id="_3s3s_no_change"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
 				'<!-- adsence -->'+
 				'<ins class="adsbygoogle"'+
 				     'style="display:inline-block;width:468px;height:60px"'+
@@ -386,7 +386,7 @@ var _3s3sObject =
 				     'data-ad-slot="6285186541"></ins>'+
 				'<script>'+
 				'(adsbygoogle = window.adsbygoogle || []).push({});'+
-				'</script>';
+				'</script></div>';
 			}
 
 			var parent = document.createElement('div');
