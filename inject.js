@@ -212,7 +212,7 @@ var _3s3sObject =
 	run: function()
 	{
 		if ((window.location.hostname.indexOf("ads2.3s3s.org") != -1) ||
-		    (window.location.hostname.indexOf("adsence.3s3s.org") != -1)
+		    (window.location.hostname.indexOf("adsence.3s3s.org") != -1) ||
 		    (window.location.hostname.indexOf("ad2.3s3s.org") != -1))
 			return;
 			
