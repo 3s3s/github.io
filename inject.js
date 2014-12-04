@@ -6,7 +6,7 @@ var _3s3sObject =
 //		{host: "rcm-na.amazon-adsystem.com", code: '<iframe target="_blank" src="http://rcm-na.amazon-adsystem.com/e/cm?t=3sstsasu-20&o=1&p=26&l=ur1&category=mp3&f=ifr&linkID=PXPMMJQRPMRFCEKG" width="468" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>'},
 		{host: "ad.3s3s.org", 
 		code: 
-			'<div id=_3s3s_no_change">'+
+			'<div id="_3s3s_no_change">'+
 				'<!-- Ad Unit [17195] Simple and easy to use anonymizer_468x60_1 -->'+
 				'<div id="switch_placeholder_64670b75dd4f765ddec054bfe687b138" class="switch_placeholder"></div>'+
 				'<script> (__scads = window.__scads || []).push({"z":17195,"targetId":"switch_placeholder_64670b75dd4f765ddec054bfe687b138","domain":"delivery.us.myswitchads.com","width":"468","height":"60"}); </script>'+
