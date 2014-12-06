@@ -63,6 +63,10 @@ var _3s3sObjectAD =
 				adArray[i].style.display = 'block';
 
 			placeFirst.parentNode.style.display = 'block';
+			
+			var content = document.body.getElementsByClassName("content");
+			for (var j=0; j<content.length; j++)
+				content[j].style.display = 'block';
 			return;
 		}
 			
