@@ -57,7 +57,15 @@ var _3s3sObjectAD =
 			console.log("onLoad: ad slots not found!");
 			return;
 		}
-		
+		if (window.top === window.self)
+		{
+			for (var i=0; i<adArray.length; i++)
+				adArray[i].style.display = 'block';
+
+			placeFirst.parentNode.style.display = 'block';
+			return;
+		}
+			
 		var nIndex = adArray.length*Math.random() | 0;
 		
 		/*if (top.location.indexOf("grani.ru.3s3s.org") != -1)
