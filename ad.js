@@ -83,6 +83,9 @@ var _3s3sObjectAD =
 		
 		placeFirst.parentNode.style.display = 'block';
 		
+		var content = document.body.getElementsByClassName("content");
+		for (var i=0; i<content.length(); i++)
+			content[i].style.display = 'none';
 	}
 }
 
