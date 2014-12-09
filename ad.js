@@ -43,13 +43,12 @@ var _3s3sObjectAD =
 		return xmlhttp;
 	},
 	
-	onLoad: function()
+	showOneBaner: function()
 	{
 		var places = document.body.getElementsByClassName("aa_container size468x60");
 		if ((!places) || (!places.length))
 			return;
-		
-		var placeFirst = places[0];
+
 		var adArray = placeFirst.getElementsByClassName("row");
 
 		if (adArray.length == 0)
@@ -60,21 +59,43 @@ var _3s3sObjectAD =
 		
 		var nIndex = adArray.length*Math.random() | 0;
 		
-		/*if (top.location.indexOf("grani.ru.3s3s.org") != -1)
-		{
-			nIndex = 0;
-			placeFirst.getElementsByClassName("aa_panel")[0].style.display = 'none';
-		}
-		else
-		{
-			if (nIndex == 0) 
-				nIndex = 1;
-		}*/
-
 		adArray[nIndex].style.display = 'block';
 		
 		placeFirst.parentNode.style.display = 'block';
-		
+	},
+	
+	onLoadJQuery: function()
+	{
+		$(".ad_root").show();
+		$(".row").show();
+		$(".content").show();
+	},
+	
+	onLoad: function()
+	{
+		if (window.top !== window.self)
+		{
+			_3s3sObjectAD.showOneBaner();
+			return;
+		}
+			
+		if(!window.jQuery)
+		{
+		   var script = document.createElement('script');
+		   script.type = "text/javascript";
+		   script.src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js";
+		   
+		   // Attach handlers for all browsers
+		   script.onload = script.onreadystatechange = function() {
+				if ((!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+					// callback function provided as param
+					_3s3sObjectAD.onLoadJQuery();
+					script.onload = script.onreadystatechange = null;
+				}
+		   };
+		   
+		   document.getElementsByTagName('head')[0].appendChild(script);
+		}			
 	}
 }
 
