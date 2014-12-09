@@ -49,6 +49,7 @@ var _3s3sObjectAD =
 		if ((!places) || (!places.length))
 			return;
 
+		var placeFirst = places[0];
 		var adArray = placeFirst.getElementsByClassName("row");
 
 		if (adArray.length == 0)
