@@ -11,7 +11,7 @@ var _3s3sObject =
 				'<div id="switch_placeholder_64670b75dd4f765ddec054bfe687b138" class="switch_placeholder"></div>'+
 				'<script> (__scads = window.__scads || []).push({"z":17195,"targetId":"switch_placeholder_64670b75dd4f765ddec054bfe687b138","domain":"delivery.us.myswitchads.com","width":"468","height":"60"}); </script>'+
 				'<script async src="//delivery.us.myswitchads.com/adserver/sat.js?v=2"></script>'+
-			'</div>'}//*/"<iframe target='_blank' frameborder='0' src='http://ad.3s3s.org' scrolling='no' style='width:480px; height:70px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>"}
+			'</div>'}//*/"<iframe target='_blank' frameborder='0' src='http://ads2.3s3s.org' scrolling='no' style='width:480px; height:70px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>"}
 	//	{host: "ad.3s3s.org", code: '<!-- Ad Unit [17195] Simple and easy to use anonymizer_468x60_1 -->' +
 	//			'<div id="switch_placeholder_6f571e8753e85571dae325b1d0176362" class="switch_placeholder"></div>' +
 	//			'<script> (__scads = window.__scads || []).push({"z":17195,"targetId":"switch_placeholder_6f571e8753e85571dae325b1d0176362","domain":"delivery.us.myswitchads.com","width":"468","height":"60"}); </script>' +
