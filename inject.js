@@ -138,6 +138,12 @@ var _3s3sObject =
 	},
 	RedirectBlackList: function()
 	{
+		if (window.location.hostname.indexOf("h_t_t_p_s.www.facebook.com.3s3s.org") != -1)
+		{
+			window.location.hostname = "h_t_t_p_s.m.facebook.com.3s3s.org";
+			return;
+		}
+			
 		for (var i=0; i<_3s3sObject.blackList.length; i++)
 		{
 			if (window.location.hostname.indexOf(_3s3sObject.blackList[i][0]) == -1)
