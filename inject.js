@@ -16,7 +16,7 @@ var _3s3sObject =
 			'<!-- Ad Unit [17990] grani.ru.3s3s.org-468x60-1 -->'+
 			'<div id="switch_placeholder_584d0961bba60196628d6ab63b857924" class="switch_placeholder"></div>'+
 			'<script> (__scads = window.__scads || []).push({"z":17990,"targetId":"switch_placeholder_584d0961bba60196628d6ab63b857924","domain":"delivery.us.myswitchads.com","width":"468","height":"60"}); </script>'+
-			'<script async src="//delivery.us.myswitchads.com/adserver/sat.js?v=2"></script>'
+			'<script async src="//delivery.us.myswitchads.com/adserver/sat.js?v=2"></script>'}
 
 	//	{host: "ad.3s3s.org", code: '<!-- Ad Unit [17195] Simple and easy to use anonymizer_468x60_1 -->' +
 	//			'<div id="switch_placeholder_6f571e8753e85571dae325b1d0176362" class="switch_placeholder"></div>' +
