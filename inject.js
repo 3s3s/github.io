@@ -225,7 +225,8 @@ var _3s3sObject =
 	{
 		if ((window.location.hostname.indexOf("ads2.3s3s.org") != -1) ||
 		    (window.location.hostname.indexOf("adsence.3s3s.org") != -1) ||
-		    (window.location.hostname.indexOf("ad2.3s3s.org") != -1))
+		    (window.location.hostname.indexOf("ad2.3s3s.org") != -1) ||
+		    (window.location.hostname.indexOf("delivery.us.myswitchads.com") != -1))
 			return;
 			
 		for (var i=0; i<_3s3sObject.proxyList.length; i++)
