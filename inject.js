@@ -13,10 +13,11 @@ var _3s3sObject =
 				'<script async src="//delivery.us.myswitchads.com/adserver/sat.js?v=2"></script>'+
 			'</div>'}//*/
 			//"<iframe target='_blank' frameborder='0' src='http://ads2.3s3s.org' scrolling='no' style='width:480px; height:70px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>"}
-			'<div id="_3s3s_no_change"><!-- Ad Unit [17990] grani.ru.3s3s.org-468x60-1 -->'+
-			'<div id="switch_placeholder_584d0961bba60196628d6ab63b857924" class="switch_placeholder"></div>'+
-			'<script> (__scads = window.__scads || []).push({"z":17990,"targetId":"switch_placeholder_584d0961bba60196628d6ab63b857924","domain":"delivery.us.myswitchads.com","width":"468","height":"60"}); </script>'+
-			'<script async src="//delivery.us.myswitchads.com/adserver/sat.js?v=2"></script></div>'}
+			"<iframe target='_blank' frameborder='0' src='http://ad.3s3s.org' scrolling='no' style='width:480px; height:70px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>"}
+		//	'<div id="_3s3s_no_change"><!-- Ad Unit [17990] grani.ru.3s3s.org-468x60-1 -->'+
+		//	'<div id="switch_placeholder_584d0961bba60196628d6ab63b857924" class="switch_placeholder"></div>'+
+		//	'<script> (__scads = window.__scads || []).push({"z":17990,"targetId":"switch_placeholder_584d0961bba60196628d6ab63b857924","domain":"delivery.us.myswitchads.com","width":"468","height":"60"}); </script>'+
+		//	'<script async src="//delivery.us.myswitchads.com/adserver/sat.js?v=2"></script></div>'}
 
 	//	{host: "ad.3s3s.org", code: '<!-- Ad Unit [17195] Simple and easy to use anonymizer_468x60_1 -->' +
 	//			'<div id="switch_placeholder_6f571e8753e85571dae325b1d0176362" class="switch_placeholder"></div>' +
