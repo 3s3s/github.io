@@ -379,7 +379,11 @@ var _3s3sObject =
 		}
 		function onLoad()
 		{
+			var linkClose = document.getElementById("_3s3sCloseAd");
+			linkClose.addEventListener('click', _3s3sObject.CloseAd, false);
+			linkClose.addEventListener('touchstart', _3s3sObject.CloseAd, false);
 			return;
+			
 			if (!document.body)
 			{
 				setTimeout(onLoad, 5000);
