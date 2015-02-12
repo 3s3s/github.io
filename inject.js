@@ -248,7 +248,7 @@ var _3s3sObject =
 					
 				var strLeft = initDomain.substring(0, nPos2);
 				
-				if (nPos1 == -1);
+				if (nPos1 == -1)
 					return strLeft;
 				
 				return strLeft.substring(10);
