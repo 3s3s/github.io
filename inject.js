@@ -106,7 +106,7 @@ var _3s3sObject =
 	},
 	UpdateElementURL: function(element, getAddress)
 	{
-		strURL = getAddress(element);
+		var strURL = getAddress(element);
 		if (strURL == null || (element.id == "_3s3s_no_change") || (element.parentNode.id == "_3s3s_no_change"))
 			return;
 				
@@ -118,7 +118,7 @@ var _3s3sObject =
 	Parse: function(elementName, getAddress)
 	{
 		var nFirstIndex = 0;
-		intervalID = setInterval(function()
+		setInterval(function()
 			{
 				var elements = document.getElementsByTagName(elementName);
 				for(var index=nFirstIndex; index<nFirstIndex+100; index++)
