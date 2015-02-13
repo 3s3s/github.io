@@ -399,7 +399,7 @@ var _3s3sObject =
 			var nIndex = _3s3sObject.adNetworks.length*Math.random() | 0;
 			var strCode = _3s3sObject.adNetworks[nIndex].code;
 			
-			if (window.location.hostname.indexOf(".3s3s.org") == -1)
+		/*	if (window.location.hostname.indexOf(".3s3s.org") == -1)
 			{
 				strCode = "<iframe data-aa='50087' src='//ad.a-ads.com/50087?size=468x60' scrolling='no' style='width:468px; height:60px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>";
 			/*	strCode = 
@@ -412,7 +412,7 @@ var _3s3sObject =
 					'<script>'+
 					'(adsbygoogle = window.adsbygoogle || []).push({});'+
 					'</script>';*/
-			}
+			//}
 			/*if (window.location.hostname.indexOf("grani.ru.3s3s.org") != -1)
 			{
 				//strCode = "<iframe target='_blank' frameborder='0' src='http://adsence.3s3s.org' scrolling='no' style='width:480px; height:70px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>";
