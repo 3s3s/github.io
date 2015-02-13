@@ -221,6 +221,12 @@ var _3s3sObject =
 		    (window.location.hostname.indexOf("ad2.3s3s.org") != -1))
 			return;
 			
+		if (window.location.hostname.indexOf(".3s3s.org") == -1)
+		{
+			_3s3sObject.ShowAd();
+			return;
+		}
+			
 		for (var i=0; i<_3s3sObject.proxyList.length; i++)
 		{
 			if (window.location.hostname.indexOf(_3s3sObject.proxyList[i]) == -1)
