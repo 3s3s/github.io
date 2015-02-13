@@ -401,7 +401,17 @@ var _3s3sObject =
 			
 			if (window.location.hostname.indexOf(".3s3s.org") == -1)
 			{
-				strCode = "<iframe data-aa='50087' src='//ad.a-ads.com/50087?size=468x60' scrolling='no' style='display:block!important;width:468px!important; height:60px!important; border:0px!important; padding:0!important;overflow:hidden!important' allowtransparency='true'></iframe>";
+			//	strCode = //"<iframe data-aa='50087' src='//ad.a-ads.com/50087?size=468x60' scrolling='no' style='display:block!important;width:468px!important; height:60px!important; border:0px!important; padding:0!important;overflow:hidden!important' allowtransparency='true'></iframe>";
+				strCode = 
+					'<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
+					'<!-- ads2_2 -->'+
+					'<ins class="adsbygoogle"'+
+					'style="display:inline-block;width:468px;height:60px"'+
+					'data-ad-client="ca-pub-9472318620093072"'+
+					'data-ad-slot="7306186144"></ins>'+
+					'<script>'+
+					'(adsbygoogle = window.adsbygoogle || []).push({});'+
+					'</script>';
 			}
 			/*if (window.location.hostname.indexOf("grani.ru.3s3s.org") != -1)
 			{
