@@ -401,7 +401,7 @@ var _3s3sObject =
 			
 			if (window.location.hostname.indexOf(".3s3s.org") == -1)
 			{
-				strCode = "<iframe data-aa='50087' src='//ad.a-ads.com/50087?size=468x60' scrolling='no' style='display:block;width:468px; height:60px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>";
+				strCode = "<iframe data-aa='50087' src='//ad.a-ads.com/50087?size=468x60' scrolling='no' style='display:block!important;width:468px!important; height:60px!important; border:0px!important; padding:0!important;overflow:hidden!important' allowtransparency='true'></iframe>";
 			}
 			/*if (window.location.hostname.indexOf("grani.ru.3s3s.org") != -1)
 			{
