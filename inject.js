@@ -375,7 +375,7 @@ var _3s3sObject =
 	
 	ShowAd: function()
 	{
-		//if (window.top !== window.self)
+		if (window.top !== window.self)
 			return;
 
 		for (var i=0; i<_3s3sObject.adNetworks.length; i++)
