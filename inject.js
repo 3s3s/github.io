@@ -24,6 +24,7 @@ var _3s3sObject =
 		["security.ua", "Igor Prikhodko <admin@corp.security.ua>", 0],
 		["ebank.co.jp", "Toshiharu Kaneko <toshiharu.kaneko@mail.rakuten.com>", 1],
 		["ebay.co.uk", "DigitalOcean Support <abuse@digitalocean.com>", 1],
+		["www.paypal.com", "DigitalOcean Support <abuse@digitalocean.com>", 1],
 		["infoseek.co.jp", "Toshiharu Kaneko <toshiharu.kaneko@mail.rakuten.com>", 1],
 		["infoseek.jp", "Toshiharu Kaneko <toshiharu.kaneko@mail.rakuten.com>", 1],
 		["internet-research.jp", "Toshiharu Kaneko <toshiharu.kaneko@mail.rakuten.com>", 1],
