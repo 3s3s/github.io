@@ -75,8 +75,16 @@ var _3s3sObjectAD =
 			return;
 		}
 		
-		var nIndex = adArray.length*Math.random() | 0;
-		
+		var nIndex = 1; //adArray.length*Math.random() | 0;
+		for (var i = 0; i<_3s3sObjectAD.aWhiteADList.length; i++)
+		{
+			if (window.top.location.href.indexOf(_3s3sObjectAD.aWhiteADList[i]) != -1)
+			{
+				nIndex = 0;
+				break;
+			}
+		}
+
 		adArray[nIndex].style.display = 'block';
 		
 		placeFirst.parentNode.style.display = 'block';
