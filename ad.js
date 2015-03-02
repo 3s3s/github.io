@@ -74,7 +74,7 @@ var _3s3sObjectAD =
 			return;
 		}
 		
-		var strLocation = parent.document.location.host;
+		var strLocation = document.referrer;
 		var nIndex = 1; //adArray.length*Math.random() | 0;
 		for (var i = 0; i<_3s3sObjectAD.aWhiteADList.length; i++)
 		{
