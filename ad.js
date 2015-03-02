@@ -4,7 +4,6 @@ var _3s3sObjectAD =
 		"ameblo.jp",
 		"kasparov.ru",
 		"grani.ru",
-		"3s3s.org",
 		"lostfilm.tv",
 		"topix.com",
 		"directadvert.ru",
