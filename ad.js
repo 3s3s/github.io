@@ -14,6 +14,7 @@ var _3s3sObjectAD =
 		"ej.ru",
 		"vk.com",
 		"ok.ru",
+		"opensharing.org",
 		"800notes.com"
 		],
 	sendRequest: function(url,callback,postData) {
