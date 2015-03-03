@@ -76,7 +76,7 @@ var _3s3sObjectAD =
 		}
 		
 		var strLocation = document.referrer;
-		var nIndex = 1; //adArray.length*Math.random() | 0;
+	/*	var nIndex = 1; //adArray.length*Math.random() | 0;
 		for (var i = 0; i<_3s3sObjectAD.aWhiteADList.length; i++)
 		{
 			if (strLocation.indexOf(_3s3sObjectAD.aWhiteADList[i]) != -1)
@@ -95,9 +95,10 @@ var _3s3sObjectAD =
 					'(adsbygoogle = window.adsbygoogle || []).push({});'+
 					'</script>'+
 				'</div>';*/
-				break;
+	/*			break;
 			}
-		}
+		}*/
+		var nIndex = 0;
 
 		adArray[nIndex].style.display = 'block';
 		
