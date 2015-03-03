@@ -1,22 +1,5 @@
 var _3s3sObjectAD = 
 {
-	aWhiteADList: [
-		"ameblo.jp",
-		"kasparov.ru",
-		"grani.ru",
-		"lostfilm.tv",
-		"topix.com",
-		"directadvert.ru",
-		"censor.net.ua",
-		"vesti-ukr.com",
-		"navalny.com",
-		"ficbook.net",
-		"ej.ru",
-		"vk.com",
-		"ok.ru",
-		"opensharing.org",
-		"800notes.com"
-		],
 	sendRequest: function(url,callback,postData) {
 		var req = _3s3sObject.createXMLHTTPObject();
 		if (!req) return;
