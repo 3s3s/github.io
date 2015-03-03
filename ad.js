@@ -83,7 +83,7 @@ var _3s3sObjectAD =
 			{
 				nIndex = 0;
 				
-				adArray[nIndex].innerHTML = 
+			/*	adArray[nIndex].innerHTML = 
 				'<div class="cell">'+
 					'<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
 					'<!-- ads2_2 -->'+
@@ -94,7 +94,7 @@ var _3s3sObjectAD =
 					'<script>'+
 					'(adsbygoogle = window.adsbygoogle || []).push({});'+
 					'</script>'+
-				'</div>';
+				'</div>';*/
 				break;
 			}
 		}
