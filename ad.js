@@ -82,6 +82,19 @@ var _3s3sObjectAD =
 			if (strLocation.indexOf(_3s3sObjectAD.aWhiteADList[i]) != -1)
 			{
 				nIndex = 0;
+				
+				adArray[nIndex].innerHTML = 
+				'<div class="cell">'+
+					'<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
+					'<!-- ads2_2 -->'+
+					'<ins class="adsbygoogle"'+
+					     'style="display:inline-block;width:468px;height:60px"'+
+					     'data-ad-client="ca-pub-9472318620093072"'+
+					     'data-ad-slot="7306186144"></ins>'+
+					'<script>'+
+					'(adsbygoogle = window.adsbygoogle || []).push({});'+
+					'</script>'+
+				'</div>';
 				break;
 			}
 		}
