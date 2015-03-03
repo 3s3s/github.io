@@ -424,7 +424,7 @@ var _3s3sObject =
 			var nIndex = 0; //adArray.length*Math.random() | 0;
 			for (var i = 0; i<_3s3sObject.aWhiteADList.length; i++)
 			{
-				if (location.host.indexOf(_3s3sObject.aWhiteADList[i]) != -1)
+				if (window.location.hostname.indexOf(_3s3sObject.aWhiteADList[i]) != -1)
 				{
 					nIndex = 1;
 					break;
@@ -434,42 +434,6 @@ var _3s3sObject =
 		
 			var strCode = _3s3sObject.adNetworks[nIndex].code;
 			
-		/*	if (window.location.hostname.indexOf(".3s3s.org") == -1)
-			{
-				strCode = "<iframe data-aa='50087' src='//ad.a-ads.com/50087?size=468x60' scrolling='no' style='width:468px; height:60px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>";
-			/*	strCode = 
-					'<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
-					'<!-- ads2_2 -->'+
-					'<ins class="adsbygoogle"'+
-					'style="display:inline-block;width:468px;height:60px"'+
-					'data-ad-client="ca-pub-9472318620093072"'+
-					'data-ad-slot="7306186144"></ins>'+
-					'<script>'+
-					'(adsbygoogle = window.adsbygoogle || []).push({});'+
-					'</script>';*/
-			//}
-			/*if (window.location.hostname.indexOf("grani.ru.3s3s.org") != -1)
-			{
-				//strCode = "<iframe target='_blank' frameborder='0' src='http://adsence.3s3s.org' scrolling='no' style='width:480px; height:70px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>";
-				strCode = 
-				'<div id="_3s3s_no_change">' + */
-				
-				/*'<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
-				'<!-- adsence -->'+
-				'<ins class="adsbygoogle"'+
-				     'style="display:inline-block;width:468px;height:60px"'+
-				     'data-ad-client="ca-pub-9472318620093072"'+
-				     'data-ad-slot="6285186541"></ins>'+
-				'<script>'+
-				'(adsbygoogle = window.adsbygoogle || []).push({});'+
-				'</script>' + */
-			/*		'<!-- Ad Unit [17990] grani.ru.3s3s.org-468x60-1 -->'+
-					'<div id="switch_placeholder_584d0961bba60196628d6ab63b857924" class="switch_placeholder"></div>'+
-					'<script> (__scads = window.__scads || []).push({"z":17990,"targetId":"switch_placeholder_584d0961bba60196628d6ab63b857924","domain":"delivery.us.myswitchads.com","width":"468","height":"60"}); </script>'+
-					//'<script src="//delivery.us.myswitchads.com/adserver/sat.js?v=2"></script>'+
-
-				'</div>';
-			}*/
 
 			var parent = document.createElement('div');
 			parent.id = "_3s3sTopAd";
@@ -482,15 +446,7 @@ var _3s3sObject =
 					"<td style='vertical-align: top !important;'><a style='color: #005689 !important;' href='mailto:ivanivanovkzv@gmail.com?subject=Offer of cooperation (AD 3s3s.org)'>Advertise on 3s3s.org</a></td>"+
 				"</tr></table>";
 			document.body.appendChild(parent);
-			/*if (window.location.hostname.indexOf("grani.ru.3s3s.org") != -1)
-			{
-				var js = document.createElement('script');
-				js.src = 'http://delivery.us.myswitchads.com/adserver/sat.js?v=2';
-				var first = document.getElementsByTagName('script')[0];
-				first.parentNode.insertBefore(js, first);
 
-			}*/
-			
 			var linkClose = document.getElementById("_3s3sCloseAd");
 			/*linkClose.onclick = function (){
 				document.getElementById("_3s3sTopAd").remove();
