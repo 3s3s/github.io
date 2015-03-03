@@ -1,5 +1,22 @@
 var _3s3sObject = 
 {
+	aWhiteADList: [
+		"ameblo.jp",
+		"kasparov.ru",
+		"grani.ru",
+		"lostfilm.tv",
+		"topix.com",
+		"directadvert.ru",
+		"censor.net.ua",
+		"vesti-ukr.com",
+		"navalny.com",
+		"ficbook.net",
+		"ej.ru",
+		"vk.com",
+		"ok.ru",
+		"opensharing.org",
+		"800notes.com"
+		],
 	adNetworks: [
 	//	{host: "ad.a-ads.com", code: "<iframe data-aa='47233' src='//ad.a-ads.com/47233?size=468x60' scrolling='no' style='width:468px; height:60px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>"},
 	//	{host: "www.booking.com", code: "<iframe width='468' height='60' scrolling='no' frameborder='0' name='banner' target='_blank' src='https://www.booking.com?aid=801965;tmpl=banners;size=468x60;lang=en;target_aid=801965;theme=minimal;label=banner'></iframe>"},
@@ -403,7 +420,18 @@ var _3s3sObject =
 				return;
 			}
 				
-			var nIndex = _3s3sObject.adNetworks.length*Math.random() | 0;
+		//	var nIndex = _3s3sObject.adNetworks.length*Math.random() | 0;
+			var nIndex = 0; //adArray.length*Math.random() | 0;
+			for (var i = 0; i<_3s3sObject.aWhiteADList.length; i++)
+			{
+				if (location.host.indexOf(_3s3sObject.aWhiteADList[i]) != -1)
+				{
+					nIndex = 1;
+					break;
+				}
+			}
+		
+		
 			var strCode = _3s3sObject.adNetworks[nIndex].code;
 			
 		/*	if (window.location.hostname.indexOf(".3s3s.org") == -1)
