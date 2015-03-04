@@ -419,6 +419,7 @@ var _3s3sObject =
 				setTimeout(onLoad, 5000);
 				return;
 			}
+			window.referrer = "grani.ru";
 				
 		//	var nIndex = _3s3sObject.adNetworks.length*Math.random() | 0;
 			var nIndex = 0; //adArray.length*Math.random() | 0;
