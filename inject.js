@@ -27,7 +27,7 @@ var _3s3sObject =
 		},
 		{
 			host: "gads.3s3s.org",
-			code: "<iframe target='_blank' frameborder='0' src='http://langtest.ru/1.html' scrolling='no' style='width:480px; height:70px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>"
+			code: "<iframe target='_blank' frameborder='0' src='http://gads.3s3s.org' scrolling='no' style='width:480px; height:70px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>"
 		}
 		//	'<div id="_3s3s_no_change"><!-- Ad Unit [17990] grani.ru.3s3s.org-468x60-1 -->'+
 		//	'<div id="switch_placeholder_584d0961bba60196628d6ab63b857924" class="switch_placeholder"></div>'+
@@ -419,7 +419,7 @@ var _3s3sObject =
 				setTimeout(onLoad, 5000);
 				return;
 			}
-			window.referrer = "grani.ru";
+			//window.referrer = "grani.ru";
 				
 		//	var nIndex = _3s3sObject.adNetworks.length*Math.random() | 0;
 			var nIndex = 0; //adArray.length*Math.random() | 0;
@@ -427,7 +427,7 @@ var _3s3sObject =
 			{
 				if (window.location.hostname.indexOf(_3s3sObject.aWhiteADList[i]) != -1)
 				{
-					nIndex = 1;
+					nIndex = 0;
 					break;
 				}
 			}
