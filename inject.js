@@ -427,7 +427,7 @@ var _3s3sObject =
 			{
 				if (window.location.hostname.indexOf(_3s3sObject.aWhiteADList[i]) != -1)
 				{
-					nIndex = 0;
+					nIndex = 1;
 					break;
 				}
 			}
