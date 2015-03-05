@@ -108,7 +108,7 @@ var initLocation = window.location;
 var initReferrer = document.referrer+"";
 var initURL = document.URL+"";
 		
-Object.defineProperty(document, "referrer", {
+/*Object.defineProperty(document, "referrer", {
 	get: function()
 	{
 		return initReferrer.replace(".3s3s.org", '');
@@ -127,7 +127,7 @@ Object.defineProperty(document, "URL", {
 	{
 		return newValue;
 	}, 
-	configurable: false });
+	configurable: false });*/
 	
 if (window.addEventListener) {
 	window.addEventListener('load', _3s3sObjectAD.onLoad, false);
