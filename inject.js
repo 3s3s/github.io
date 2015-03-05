@@ -28,8 +28,8 @@ var _3s3sObject =
 			code: "<iframe target='_blank' frameborder='0' src='http://ads2.3s3s.org' scrolling='no' style='width:480px; height:70px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>"
 		},
 		{
-			host: "gads.3s3s.org",
-			code: "<iframe target='_blank' frameborder='0' src='http://gads.3s3s.org' scrolling='no' style='width:480px; height:70px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>"
+			host: "langtest.ru",
+			code: "<iframe target='_blank' frameborder='0' src='http://langtest.ru/1.html' scrolling='no' style='width:480px; height:70px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>"
 		}
 		//	'<div id="_3s3s_no_change"><!-- Ad Unit [17990] grani.ru.3s3s.org-468x60-1 -->'+
 		//	'<div id="switch_placeholder_584d0961bba60196628d6ab63b857924" class="switch_placeholder"></div>'+
