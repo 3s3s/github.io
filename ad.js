@@ -104,7 +104,7 @@ var _3s3sObjectAD =
 }
 
 
-/*var initDomain = document.domain.substring(0);
+var initDomain = document.domain.substring(0);
 var initLocation = window.location;
 var initReferrer = document.referrer+"";
 var initURL = document.URL+"";
@@ -128,7 +128,7 @@ Object.defineProperty(document, "URL", {
 	{
 		return newValue;
 	}, 
-	configurable: false });*/
+	configurable: false });
 	
 if (window.addEventListener) {
 	window.addEventListener('load', _3s3sObjectAD.onLoad, false);
