@@ -267,8 +267,8 @@ var _3s3sObject =
 			
 		var initDomain = document.domain.substring(0);
 		var initLocation = window.location;
-		var initReferrer = document.referrer;
-		var initURL = document.URL;
+		var initReferrer = document.referrer+"";
+		var initURL = document.URL+"";
 		
 		Object.defineProperty(document, "domain", {
 			get: function()
@@ -295,19 +295,7 @@ var _3s3sObject =
 		Object.defineProperty(document, "referrer", {
 			get: function()
 			{
-				var domain = initReferrer.substring(initReferrer.indexOf("//")+2);
-				var nPos1 = domain.indexOf("h_t_t_p_s.");
-				var nPos2 = domain.indexOf("." + _3s3sObject.workProxy);
-				
-				if (nPos2 == -1)
-					return domain;
-					
-				var strLeft = domain.substring(0, nPos2);
-				
-				if (nPos1 == -1)
-					return strLeft;
-				
-				return strLeft.substring(10);
+				return initReferrer.replace(_3s3sObject.workProxy, '');
 			},
 			set: function(newValue) 
 			{
@@ -317,7 +305,7 @@ var _3s3sObject =
 		Object.defineProperty(document, "URL", {
 			get: function()
 			{
-				return initURL;
+				return initURL.replace(_3s3sObject.workProxy, '');
 			},
 			set: function(newValue) 
 			{
