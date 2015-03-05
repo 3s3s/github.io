@@ -103,12 +103,12 @@ var _3s3sObjectAD =
 	}
 }
 
-var initDomain = document.domain.substring(0);
+/*var initDomain = document.domain.substring(0);
 var initLocation = window.location;
 var initReferrer = document.referrer+"";
 var initURL = document.URL+"";
 		
-/*Object.defineProperty(document, "referrer", {
+Object.defineProperty(document, "referrer", {
 	get: function()
 	{
 		return initReferrer.replace(".3s3s.org", '');
