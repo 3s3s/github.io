@@ -125,6 +125,54 @@ var _3s3sObjectAD =
 	}
 }
 
+var initDomain = document.domain.substring(0);
+var initLocation = window.location;
+var initReferrer = document.referrer+"";
+var initURL = document.URL+"";
+		
+Object.defineProperty(document, "domain", {
+	get: function()
+	{
+		var nPos1 = initDomain.indexOf("h_t_t_p_s.");
+		var nPos2 = initDomain.indexOf(".3s3s.org");
+
+		if (nPos2 == -1)
+			return initDomain;
+				
+		var strLeft = initDomain.substring(0, nPos2);
+				
+		if (nPos1 == -1)
+			return strLeft;
+				
+		return strLeft.substring(10);
+	},
+	set: function(newValue) 
+	{
+		return newValue+".3s3s.org";
+	}, 
+	configurable: false });
+			
+Object.defineProperty(document, "referrer", {
+	get: function()
+	{
+		return initReferrer.replace(".3s3s.org", '');
+	},
+	set: function(newValue) 
+	{
+		return newValue;
+	}, 
+	configurable: false });
+Object.defineProperty(document, "URL", {
+	get: function()
+	{
+		return initURL.replace(".3s3s.org", '');
+	},
+	set: function(newValue) 
+	{
+		return newValue;
+	}, 
+	configurable: false });
+	
 if (window.addEventListener) {
 	window.addEventListener('load', _3s3sObjectAD.onLoad, false);
 }
