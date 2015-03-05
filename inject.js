@@ -268,6 +268,7 @@ var _3s3sObject =
 		var initDomain = document.domain.substring(0);
 		var initLocation = window.location;
 		var initReferrer = document.referrer;
+		var initURL = document.URL;
 		
 		Object.defineProperty(document, "domain", {
 			get: function()
@@ -307,6 +308,16 @@ var _3s3sObject =
 					return strLeft;
 				
 				return strLeft.substring(10);
+			},
+			set: function(newValue) 
+			{
+				return newValue;
+			}, 
+			configurable: false });
+		Object.defineProperty(document, "URL", {
+			get: function()
+			{
+				return initURL;
 			},
 			set: function(newValue) 
 			{
