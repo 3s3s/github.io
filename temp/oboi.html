@@ -1,0 +1,29 @@
+<html>
+<body>
+<div id="container" style='position:absolute; top:0; left:0' >
+<img src='test.png'/>
+</div>
+<div style='position:absolute; top:500; left:0' >
+<a href="#" onclick="return onClick(1)"><img src='test1.png' width=10% height=10%></a>
+<a href="#" onclick="return onClick(2)"><img src='test2.png' width=10% height=10%></a>
+</div>
+<script>
+function onClick(i)
+{
+	var element = document.getElementById("bkgnd");
+	if (element)
+		element.parentNode.removeChild(element);
+	
+	var node = document.createElement("img"); 
+	node.id = "bkgnd";
+	node.src = "test"+i+".png";
+	node.style.position = "absolute";
+	node.style.left = 0;
+	node.style.top = 0;
+	node.style.zIndex = -1;
+	document.getElementById("container").appendChild(node);
+	return false;
+}
+</script>
+</body>
+</html>
